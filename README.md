@@ -10,6 +10,7 @@
 - `export-current.ps1`：把本机正在使用的全局规则导回仓库。
 - `safe-config.example.toml`：可手工参考的最小安全配置，不自动覆盖本机配置。
 - `project-templates/`：网站、桌面软件和浏览器插件的项目级规则模板。
+- `project-rules/`：当前七个开发项目的项目级规则快照和原路径清单。
 
 ## 新电脑安装
 
@@ -23,6 +24,8 @@ powershell -ExecutionPolicy Bypass -File .\verify.ps1
 安装脚本默认写入 `%USERPROFILE%\.codex\AGENTS.md`。如果环境变量 `CODEX_HOME` 已配置，则使用它。已有规则会备份为同目录的 `AGENTS.md.backup-时间戳`。
 
 项目自己的 `AGENTS.md` 应与项目代码一起提交到项目仓库。新电脑克隆项目后，Codex 会同时读取全局规则和项目规则。
+
+如果某个项目仓库还没有提交自己的 `AGENTS.md`，可以在确认新电脑上的项目路径和技术栈后，从 `project-rules/` 选择对应快照复制到项目根目录。不要根据 `manifest.json` 中的旧电脑路径自动覆盖新电脑文件。
 
 ## 同一台电脑更换账号
 
