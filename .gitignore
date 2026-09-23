@@ -1,0 +1,29 @@
+# Codex credentials and machine state — never commit
+auth.json*
+.cockpit_codex_auth.json*
+.sandbox-secrets/
+sessions/
+archived_sessions/
+attachments/
+browser/
+cache/
+logs*
+thread_history*
+session_index.jsonl
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+.codex-global-state.json*
+installation_id
+config.toml
+config.toml.bak*
+AGENTS.md.backup-*
+
+# Test and editor artifacts
+.tmp/
+tmp/
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,8 @@
+# 只用于手工合并到新电脑的 ~/.codex/config.toml。
+# 不要直接覆盖现有 config.toml；模型名称和可用档位变化时先核对当前客户端。
+
+model = "gpt-6-sol"
+model_reasoning_effort = "medium"
+
+[desktop]
+show_context_window_usage = true
